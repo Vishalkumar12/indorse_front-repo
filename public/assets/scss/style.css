@@ -5036,3 +5036,13 @@ header .wrapper {
 .more-icon {
   cursor: pointer;
 }
+
+.h1-welcome {
+  margin-top: 80px;
+  text-align: center
+}
+
+.section-welcome {
+  width : 100%
+}
+

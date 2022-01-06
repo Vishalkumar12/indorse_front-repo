@@ -117,9 +117,7 @@ const Login = () => {
   // Redirect User to Dashboard Page if user is already logged in.
   if (
     //When Any normal user try to login
-    (authentication() && data?.User?.status === 1 && permissions?.length > 0) ||
-    //When Admin try to login
-    data?.hasAllAccess === 1
+    (authentication() && data?.User?.status === 1 )
   )
     return <Redirect to="/dashboard" />;
 
@@ -132,8 +130,7 @@ const Login = () => {
           <div className="login-in" id="login-div" style={{ margin: "auto" }}>
             <h1>Indorse</h1>
             <h6 className="text-gray m32">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-              Vestibulum semper interdum enim sit amet euismod.
+              Please fill in the credentials to Login.
             </h6>
 
             <form onSubmit={handleSubmit(onSubmit)} autoComplete="off">

@@ -168,7 +168,7 @@ const SignUp = () => {
             JSON.stringify(response?.data?.responseData?.hasAllAccess)
           );
           // Redirect to Create Account Page (Final Step)
-          history.push("/createAccount");
+          history.push("/login");
 
           // Set user id in local storage
           localStorage.setItem(
