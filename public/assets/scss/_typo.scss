@@ -1,0 +1,355 @@
+$eina: "Eina";
+$inter: "Inter", sans-serif;
+$air: "Airbnb";
+
+:root {
+  --air: "Airbnb";
+}
+
+@font-face {
+  font-family: "Inter";
+  src: url("../fonts/Inter-Black.ttf") format("ttf"),
+    url("../fonts/Inter-Black.ttf") format("truetype");
+  font-style: normal;
+  font-stretch: normal;
+  font-weight: 900;
+}
+
+@font-face {
+  font-family: "Inter";
+  src: url("../fonts/Inter-ExtraBold.ttf") format("ttf"),
+    url("../fonts/Inter-ExtraBold.ttf") format("truetype");
+  font-style: normal;
+  font-stretch: normal;
+  font-weight: 800;
+}
+
+@font-face {
+  font-family: "Inter";
+  src: url("../fonts/Inter-Bold.ttf") format("ttf"),
+    url("../fonts/Inter-Bold.ttf") format("truetype");
+  font-style: normal;
+  font-stretch: normal;
+  font-weight: 700;
+}
+
+@font-face {
+  font-family: "Inter";
+  src: url("../fonts/Inter-SemiBold.ttf") format("ttf"),
+    url("../fonts/Inter-SemiBold.ttf") format("truetype");
+  font-style: normal;
+  font-stretch: normal;
+  font-weight: 600;
+}
+
+@font-face {
+  font-family: "Inter";
+  src: url("../fonts/Inter-Medium.ttf") format("ttf"),
+    url("../fonts/Inter-Medium.ttf") format("truetype");
+  font-style: normal;
+  font-stretch: normal;
+  font-weight: 500;
+}
+
+@font-face {
+  font-family: "Inter";
+  src: url("../fonts/Inter-Regular.ttf") format("ttf"),
+    url("../fonts/Inter-Regular.ttf") format("truetype");
+  font-style: normal;
+  font-stretch: normal;
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: "Inter";
+  src: url("../fonts/Inter-Light.ttf") format("ttf"),
+    url("../fonts/Inter-Light.ttf") format("truetype");
+  font-style: normal;
+  font-stretch: normal;
+  font-weight: 300;
+}
+
+@mixin colors {
+  &.black {
+    color: $title !important;
+  }
+
+  &.grey {
+    color: $grey !important;
+  }
+
+  &.text {
+    color: $text !important;
+  }
+
+  &.orange {
+    color: $orange !important;
+  }
+
+  &.pink {
+    color: $pink !important;
+  }
+}
+
+@mixin margin {
+  &.m4 {
+    margin-bottom: 4px !important;
+  }
+  &.m8 {
+    margin-bottom: 8px;
+  }
+
+  &.m10 {
+    margin-bottom: 10px;
+  }
+
+  &.m12 {
+    margin-bottom: 12px;
+  }
+
+  &.m14 {
+    margin-bottom: 14px;
+  }
+
+  &.m16 {
+    margin-bottom: 16px;
+  }
+
+  &.m18 {
+    margin-bottom: 18px;
+  }
+
+  &.m20 {
+    margin-bottom: 20px;
+  }
+
+  &.m24 {
+    margin-bottom: 24px;
+  }
+
+  &.m28 {
+    margin-bottom: 28px;
+  }
+
+  &.m30 {
+    margin-bottom: 30px;
+  }
+
+  &.m32 {
+    margin-bottom: 32px;
+  }
+
+  &.m36 {
+    margin-bottom: 36px !important;
+  }
+
+  &.m48 {
+    margin-bottom: 48px;
+  }
+
+  &.m40 {
+    margin-bottom: 40px;
+  }
+
+  &.m50 {
+    margin-bottom: 50px;
+  }
+
+  &.m56 {
+    margin-bottom: 56px;
+  }
+
+  &.m66 {
+    margin-bottom: 66px;
+  }
+
+  &.m72 {
+    margin-bottom: 72px;
+  }
+}
+
+h1,
+.h1 {
+  font-family: $inter;
+  font-weight: 700;
+  margin-bottom: 26px;
+  line-height: 1.2;
+  font-size: 36px;
+  line-height: 1.2;
+  margin-bottom: 12px;
+
+  @include phone-m {
+    font-size: 38px;
+    line-height: 1.1;
+    margin-bottom: 18px;
+    letter-spacing: -0.72px;
+  }
+
+  @include margin;
+
+  @include fluid-m {
+    font-size: 72px;
+  }
+}
+
+h2,
+.h2 {
+  font-family: $inter;
+  margin-bottom: 16px;
+  font-size: 24px;
+  line-height: 1.17;
+  font-weight: 600;
+
+  @include phone-m {
+    font-size: 24px;
+  }
+
+  @include margin;
+}
+
+h3,
+.h3 {
+  font-family: $inter;
+  font-size: 20px;
+  line-height: 1.17;
+  font-weight: 600;
+
+  @include tabv-m {
+    font-size: 18px;
+  }
+
+  @include margin;
+}
+
+h4,
+.h4 {
+  font-family: $inter;
+  font-size: 18px;
+  line-height: 1.4;
+  font-weight: 600;
+
+  @include phone-m {
+    font-size: 18px;
+    line-height: 1.07;
+  }
+
+  @include margin;
+}
+
+h5,
+.h5 {
+  font-size: 16px;
+  line-height: 1.55;
+  font-weight: 600;
+
+  @include tabv-m {
+    font-size: 16px;
+  }
+
+  @include margin;
+}
+
+h6,
+.h6 {
+  line-height: 1.6;
+  font-weight: 600;
+  font-size: 12px;
+  color: $dark;
+
+  @include phone-m {
+    font-size: 13px;
+    letter-spacing: -0.16px;
+  }
+
+  b {
+    font-weight: 700;
+  }
+
+  @include fluid-m {
+    font-size: 22px;
+  }
+
+  @include margin;
+}
+
+p,
+.p {
+  font-size: 14px;
+  line-height: 1.5;
+  color: $text;
+
+  @include tabv-m {
+    font-size: 14px;
+  }
+
+  &.label {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+  }
+
+  &.lg {
+    font-size: 17px;
+    line-height: 26px;
+  }
+
+  &.txt {
+    font-weight: 500;
+    color: $dark;
+    margin-bottom: 4px;
+  }
+
+  @include margin;
+}
+
+ul {
+  margin-bottom: 30px;
+
+  li {
+    font-size: 15px;
+
+    color: $gray;
+
+    @include tabv-m {
+      font-size: 16px;
+    }
+  }
+}
+
+.subtext {
+  font-size: 14px;
+  line-height: 1.14;
+  color: $gray;
+}
+
+a {
+  color: $title;
+  text-decoration: none;
+  outline: none !important;
+
+  &:hover {
+    color: $title;
+    text-decoration: none;
+  }
+}
+
+ul {
+  list-style: none;
+  padding-left: 0;
+  margin-bottom: 0;
+}
+
+.label {
+  font-size: 14px;
+  line-height: 1.5;
+  font-weight: bold;
+  color: $text;
+  letter-spacing: 1.4px;
+  text-transform: uppercase;
+
+  @include phone-m {
+    font-size: 16px;
+  }
+
+  @include margin;
+}

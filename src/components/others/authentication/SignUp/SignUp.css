@@ -1,0 +1,35 @@
+/* CSS for Signup Page  */
+
+.signup-section {
+  padding: 40px 0px;
+}
+.signup-div {
+  max-width: 428px;
+  margin: auto;
+  transition: all 410ms cubic-bezier(0.4, 0.4, 0.44, 0.8);
+  text-align: left;
+}
+.signup-div h1,
+.signup-div h6 {
+  text-align: center;
+}
+.main .otpTimer {
+  margin-left: 20px;
+  font-size: 16px;
+  font-weight: bold;
+  color: brown;
+}
+.main .resendCodeDisabled {
+  border: none;
+  background: white;
+  font-weight: bold;
+  color: gray;
+}
+.main .resendCodeEnabled {
+  border: none;
+  background: white;
+  font-weight: bold;
+  color: blue;
+  cursor: pointer;
+}
+/* ==================== THE END =============================== */

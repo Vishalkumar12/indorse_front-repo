@@ -1,0 +1,27 @@
+import React from "react";
+import ReactDOM from "react-dom";
+import "./index.css";
+import { store } from "./redux/app/store";
+import { Provider } from "react-redux";
+import * as serviceWorker from "./serviceWorker";
+import Home from "./components/home/Home";
+//  ===================================================
+
+// This is the entry point of our application.
+
+ReactDOM.render(
+  <React.StrictMode>
+    <Provider store={store}>
+      <Home />
+    </Provider>
+  </React.StrictMode>,
+  document.getElementById("root")
+);
+//  ===================================================
+
+// If you want your app to work offline and load faster, you can change
+// unregister() to register() below. Note this comes with some pitfalls.
+// Learn more about service workers: https://bit.ly/CRA-PWA
+serviceWorker.unregister();
+
+// =============================== THE END ====================================

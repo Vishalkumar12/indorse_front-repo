@@ -1,0 +1,130 @@
+$gal: 360px;
+$ip: 380px;
+$phonev: 480px;
+$phone: 767px;
+$tabv: 992px;
+$tab: 1200px;
+$desk: 1300px;
+$desk-l: 1400px;
+
+$tabn-m: 768px;
+
+@mixin gal {
+  @media (max-width: #{$gal}) {
+    @content;
+  }
+}
+
+@mixin ip {
+  @media (max-width: #{$ip}) {
+    @content;
+  }
+}
+
+@mixin phonev {
+  @media (max-width: #{$phonev}) {
+    @content;
+  }
+}
+
+@mixin phone {
+  @media (max-width: #{$phone}) {
+    @content;
+  }
+}
+
+@mixin tabv {
+  @media (max-width: #{$tabv}) {
+    @content;
+  }
+}
+
+@mixin tab {
+  @media (max-width: #{$tab}) {
+    @content;
+  }
+}
+
+@mixin desk {
+  @media (max-width: #{$desk}) {
+    @content;
+  }
+}
+
+@mixin desk-l {
+  @media (max-width: #{$desk-l}) {
+    @content;
+  }
+}
+
+@mixin ip-m {
+  @media (min-width: #{$ip}) {
+    @content;
+  }
+}
+
+@mixin phone-m {
+  @media (min-width: #{$phone}) {
+    @content;
+  }
+}
+
+@mixin phonev-m {
+  @media (min-width: #{$phonev}) {
+    @content;
+  }
+}
+
+@mixin tabv-m {
+  @media (min-width: #{$tabv}) {
+    @content;
+  }
+}
+
+@mixin tab-m {
+  @media (min-width: #{$tab}) {
+    @content;
+  }
+}
+
+@mixin desk-m {
+  @media (min-width: #{$desk}) {
+    @content;
+  }
+}
+
+@mixin tabn-m {
+  @media (min-width: #{$tabn-m}) {
+    @content;
+  }
+}
+
+@mixin deskl-m {
+  @media (min-width: 1550px) {
+    @content;
+  }
+}
+
+@mixin air {
+  @media (max-height: 800px) and (min-width: 1100px) {
+    @content;
+  }
+}
+
+@mixin air-m {
+  @media (min-height: 820px) and (min-width: 1500px) {
+    @content;
+  }
+}
+
+@mixin tablet {
+  @media (min-width:#{$phone}) and (max-width: #{$tabv}) {
+    @content;
+  }
+}
+
+@mixin fluid-m {
+  @media (min-width: 2100px) {
+    @content;
+  }
+}
