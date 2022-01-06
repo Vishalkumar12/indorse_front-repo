@@ -2,7 +2,7 @@
 
 // ----------------- TRUCKS ON TRACK - API's BASE URLs ------------------
 
-export const API_BASE_URL = "http://34.125.117.193:3001//"; //DEVELOPMENT
+export const API_BASE_URL = "http://34.125.117.193:3001/"; //DEVELOPMENT
 //export const API_BASE_URL = ""; //PRODUCTION
 
 // ---------------------- React Hook Form Field validations error type -- start ---------------------
